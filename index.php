@@ -7,7 +7,7 @@
 </head>
 <body>
 <div id="content">
-    <img src="profile.png"/>
+    <img src="profile.jpg"/>
 </div>
 <h1>Duo Tao</h1>
 
