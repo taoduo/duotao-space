@@ -12,13 +12,12 @@
 <center>
 	<img height="125" width="125" alt="Duo Tao Profile" src="profile.jpg"/>
 	<h1>Duo Tao</h1>
-	<i>What we do for ourselves dies with us. What we do for others and the world remains and is immortal. (Albert Pike)</i>
-	<p>I am born in Harbin, China. I have been an undergraduate at Carleton College since 2014. I study physics and computer science. </p>
-	<p>I am passionate about science and technology. I wish I could know all of them; however, heretofore, I have mostly been studying cosmology, astronomy and gravitational waves (<a href="https://www.ligo.caltech.edu/">LIGO</a>). When I have time, I like to train my body (running, swimming, basketball, fencing etc.) and my mind (by learning new things). </p>
+	<p><i>What we do for ourselves dies with us. What we do for others and the world remains and is immortal. (Albert Pike)</i><p>
+	<p>I am born in Harbin, China. I have been an undergraduate at <a href="https://www.carleton.edu/">Carleton College</a> since 2014. I study physics and computer science. I am passionate about science and technology. I wish I could know all of them; however, heretofore I have mostly been studying cosmology, astronomy and gravitational waves (<a href="https://www.ligo.caltech.edu/">LIGO</a>). When I have time, I like to train my body (running, swimming, basketball, fencing etc.) and my mind (by learning new things). </p>
 </center>
 
 <footer>
- <small>&copy; Copyright 2018, Duo Tao</small>
+	<center><small>&copy; Copyright 2018, Duo Tao</small></center>
 </footer>
 </body>
 </html>
