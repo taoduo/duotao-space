@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<title>Duo Tao</title>
 </head>
 <body>
 
