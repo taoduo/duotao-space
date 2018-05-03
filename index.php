@@ -12,7 +12,7 @@
 <center>
 	<img height="125" width="125" alt="Duo Tao Profile" src="profile.jpg"/>
 	<h1>Duo Tao</h1>
-	<i>What we do for ourselves dies with us. What we do for others and the world remains and is immortal. --Albert Pike</i>
+	<i>What we do for ourselves dies with us. What we do for others and the world remains and is immortal. (Albert Pike)</i>
 	<p>I study physics and computer science at Carleton College. </p>
 </center>
 
