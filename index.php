@@ -9,12 +9,10 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body class="container">
-<div id="content">
-    <img src="profile.jpg"/>
-</div>
 <center>
+	<img src="profile.jpg"/>
 	<h1>Duo Tao</h1>
-	<i>What we do for ourselves dies with us. What we do for others and the world remains and is immortal.</i>
+	<i>What we do for ourselves dies with us. What we do for others and the world remains and is immortal. --Albert Pike</i>
 	<p>I study physics and computer science at Carleton College. </p>
 </center>
 
