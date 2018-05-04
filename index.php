@@ -49,12 +49,14 @@
       		e.preventDefault();
       		$('#form-submit').prop('disabled', true);
     		var formData = new FormData(this);
+    		console.log('123');
 		    $.ajax({
 		        url: '/php/post.php',
 		        type: 'POST',
 		        data: formData,
 		        success: function(msg) {
 		            console.log(msg);
+		            console.log('345');
 		        }               
 		    });
 		});
