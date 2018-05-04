@@ -1,8 +1,8 @@
 <?php
+session_start();
 $target_dir = "../posts/";
 $filename = basename($_FILES["file"]["name"]);
 $target_file = $target_dir . $filename;
-echo 'haha';
 if($_SESSION['login'] == 1) {
 	echo 'hoho';
     if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_file)) {
