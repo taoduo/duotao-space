@@ -12,6 +12,6 @@ if($_SESSION['login'] == 1) {
         echo "Sorry, there was an error uploading your file.";
     }
 } else {
-	echo "lala";
+	echo $_SESSION['login'];
 }
 ?>
