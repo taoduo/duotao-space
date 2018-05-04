@@ -1,10 +1,3 @@
-<?php
-if (isset($_POST["data"]) && strcmp($_POST["data"], "post") == 0) {
-	echo "success";
-} else {
-	echo "failure";
-}
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,13 +27,12 @@ if (isset($_POST["data"]) && strcmp($_POST["data"], "post") == 0) {
 			String c = code;
 			code = ""
 			request = $.ajax({
-		        url: "/",
+		        url: "/php/login.php",
 		        type: "post",
-		        data: c
-		    });
-		    request.done(function (response, textStatus, jqXHR){
-		        // Log a message to the console
-		        console.log(response);
+		        data: c,
+		        success: function(data) {
+				    console.log(data);
+				}
 		    });
 		}
 	});
