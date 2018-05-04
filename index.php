@@ -23,7 +23,8 @@
 	var code = ""
 	$("body").keypress(function(e) {
 		code += String.fromCharCode(e.which);
-		if (code === '\n') {
+		console.log(code)
+		if (code == '\n') {
 			var c = code;
 			code = ""
 			request = $.ajax({
