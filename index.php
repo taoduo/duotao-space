@@ -30,7 +30,7 @@
 			request = $.ajax({
 		        url: "/php/login.php",
 		        type: "post",
-		        data: c,
+		        data: {code: c},
 		        success: function(data) {
 				    console.log(data);
 				}

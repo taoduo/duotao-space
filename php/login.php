@@ -1,6 +1,6 @@
 <?php
-if (isset($_POST[0]) && strcmp($_POST[0], "post") == 0) {
-	echo $_POST[0];
+if (isset($_POST["code"]) && strcmp($_POST["code"], 'post') == 0) {
+	echo $_POST["code"];
 } else {
 	echo $_POST[0];
 }
