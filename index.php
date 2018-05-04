@@ -32,7 +32,9 @@
 		        type: "post",
 		        data: {code: c},
 		        success: function(data) {
-				    console.log(data);
+				    if (data == 'yes') {
+				    	console.log("login success")
+				    }
 				}
 		    });
 		} else {
