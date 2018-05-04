@@ -4,7 +4,11 @@ $target_dir = "../posts/";
 $filename = basename($_FILES["file"]["name"]);
 $target_file = $target_dir . $filename;
 
-echo $_FILES["file"]["tmp_name"];
+if (file_exists($_FILES["file"]["tmp_name"])) {
+	echo "file exist\n";
+} else {
+	echo "do not exist\n";
+}
 if($_SESSION['login'] == 1) {
 	$moved = move_uploaded_file($_FILES["file"]["tmp_name"]);
     if ($moved) {
