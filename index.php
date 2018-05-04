@@ -37,7 +37,7 @@
 			    </div>	    
 			    <div class="form-group">
 				    <label for="file">File</label>
-				    <input type="file" class="form-control-file" id="file" name='file'>
+				    <input type="file" class="form-control-file" id="file" name='file' accept=".pdf">
 		  		</div>
 	      </div>
 	      <div class="modal-footer">
