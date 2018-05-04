@@ -22,9 +22,8 @@
 <script type="text/javascript">
 	var code = ""
 	$("body").keypress(function(e) {
-		console.log(e.which)
 		char = String.fromCharCode(e.which)
-		if (char == '\n') {
+		if (e.which == 13) {
 			var c = code;
 			code = ""
 			request = $.ajax({
@@ -37,7 +36,6 @@
 		    });
 		} else {
 			code += char;
-			console.log(code)
 		}
 	});
 
