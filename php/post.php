@@ -8,7 +8,11 @@ if($_SESSION['login'] == 1) {
     if ($moved) {
     	echo "Successfully uploaded";         
     } else {
-  		echo "Not uploaded";         
+    	if (is_writable($target_dir)) {
+    		echo "Not uploaded";         
+    	} else {
+    		echo "not writable";
+    	}
     }
 }
 ?>
