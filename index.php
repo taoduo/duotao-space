@@ -32,7 +32,7 @@
 		        type: "post",
 		        data: c,
 		        success: function(data) {
-				    console.log("received:" + data);
+				    console.log(data);
 				}
 		    });
 		} else {
