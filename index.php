@@ -58,7 +58,12 @@
        			contentType: false,
 		        success: function(msg) {
 		            console.log(msg);
-		        }               
+		            $("#myModal").modal('hide');
+		        },
+		        error: function(msg) {
+		       		$("#myModal").modal('hide');
+		       		alert("ERROR");
+		        }    
 		    });
 		});
       </script>
