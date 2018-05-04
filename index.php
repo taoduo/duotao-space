@@ -47,7 +47,7 @@
       <script type="text/javascript">
       	$('#post-form').submit(function(e) {
       		e.preventDefault();
-      		$('#form-submit').disable(true);
+      		$('#form-submit').prop('disabled', true);
     		var formData = new FormData(this);
 		    $.ajax({
 		        url: '/php/post.php',
@@ -69,7 +69,6 @@
 		if (e.which == 13) {
 			var c = code;
 			code = ""
-			console.log("sent:" + c)
 			request = $.ajax({
 		        url: "/php/login.php",
 		        type: "post",
