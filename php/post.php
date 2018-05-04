@@ -8,7 +8,7 @@ if($_SESSION['login'] == 1) {
         # echo "The file " . basename( $_FILES["file"]["name"]). " has been uploaded.";
         echo "haha";
     } else {
-        echo $_FILES["file"]["name"];
+        echo $_FILES["file"]["tmp_name"];
     }
 }
 ?>
