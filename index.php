@@ -29,21 +29,36 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="/php/post.php" method="POST">
+      <form enctype="multipart/form-data" id="post-form">
 	      <div class="modal-body">
 		        <div class="form-group">
 			      <label for="title">Title</label>
-			      <input class="form-control" id="title" placeholder="Enter title">
+			      <input class="form-control" id="title" name='title' placeholder="Enter title">
 			    </div>	    
 			    <div class="form-group">
 				    <label for="file">File</label>
-				    <input type="file" class="form-control-file" id="file">
+				    <input type="file" class="form-control-file" id="file" name='file'>
 		  		</div>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="submit" class="btn btn-primary">Post</button>
+	        <button type="submit" id='form-submit' class="btn btn-primary">Post</button>
 	      </div>
       </form>
+      <script type="text/javascript">
+      	$('#post-form').submit(function(e) {
+      		e.preventDefault();
+      		$('#form-submit').disable(true);
+    		var formData = new FormData(this);
+		    $.ajax({
+		        url: '/php/post.php',
+		        type: 'POST',
+		        data: formData,
+		        success: function(msg) {
+		            console.log(msg);
+		        }               
+		    });
+		});
+      </script>
     </div>
   </div>
 </div>
@@ -69,7 +84,6 @@
 			code += char;
 		}
 	});
-
 </script>
 </body>
 </html>
