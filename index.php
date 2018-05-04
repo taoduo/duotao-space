@@ -22,9 +22,8 @@
 <script type="text/javascript">
 	var code = ""
 	$("body").keypress(function(e) {
-		code += String.fromCharCode(e.which);
-		console.log(code)
-		if (code == '\n') {
+		char = String.fromCharCode(e.which)
+		if (char == '\n') {
 			var c = code;
 			code = ""
 			request = $.ajax({
@@ -35,6 +34,9 @@
 				    console.log(data);
 				}
 		    });
+		} else {
+			code += char;
+			console.log(code)
 		}
 	});
 
