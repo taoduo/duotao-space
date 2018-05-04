@@ -41,7 +41,7 @@
 		  		</div>
 	      </div>
 	      <div class="modal-footer">
-	        <input type="submit" id='form-submit' class="btn btn-primary" name="submit">Post</input>
+	        <input type="submit" id='form-submit' class="btn btn-primary" name="submit">
 	      </div>
       </form>
       <script type="text/javascript">
