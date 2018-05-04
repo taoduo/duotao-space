@@ -29,20 +29,22 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        <div class="form-group">
-	      <label for="title">Title</label>
-	      <input class="form-control" id="title" placeholder="Enter title">
-	    </div>	    
-	    <div class="form-group">
-		    <label for="file">File</label>
-		    <input type="file" class="form-control-file" id="file">
-  		</div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+      <form action="/php/post.php" method="POST">
+	      <div class="modal-body">
+		        <div class="form-group">
+			      <label for="title">Title</label>
+			      <input class="form-control" id="title" placeholder="Enter title">
+			    </div>	    
+			    <div class="form-group">
+				    <label for="file">File</label>
+				    <input type="file" class="form-control-file" id="file">
+		  		</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Post</button>
+	      </div>
+      </form>
     </div>
   </div>
 </div>
