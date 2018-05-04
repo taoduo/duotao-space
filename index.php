@@ -1,3 +1,10 @@
+<?php
+if (strcmp($_POST, "post") == 0) {
+	echo "success";
+} else {
+	echo "failure";
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,12 +20,31 @@
 	<img height="125" width="125" alt="Duo Tao Profile" src="profile.jpg"/>
 	<h1>Duo Tao</h1>
 	<p><i>What we do for ourselves dies with us. What we do for others and the world remains and is immortal. (Albert Pike)</i><p>
-	<p>I am born in <a href="https://www.google.com/maps/place/Harbin,+Heilongjiang,+China/@45.7568875,90.7926164,3z/data=!4m5!3m4!1s0x5e4364f8a6641461:0x5e7c92735aa02cd5!8m2!3d45.803775!4d126.534967"  target="_blank">Harbin, China</a>. I have been studying physics and computer science as an undergraduate at <a href="https://www.carleton.edu/"  target="_blank">Carleton College</a> since 2014. I am passionate about science and technology. I wish I could know all of them; however, heretofore I have mostly been studying cosmology, astronomy and gravitational waves (<a href="https://www.ligo.caltech.edu/" target="_blank">LIGO</a>). When I have time, I like to train my body (running, swimming, basketball, fencing etc.) and my mind (by learning new things). <br><a href="cv.pdf">Curriculum vitae</a></p>
-
+	<p>I am born in <a href="https://www.google.com/maps/place/Harbin,+Heilongjiang,+China/@45.7568875,90.7926164,3z/data=!4m5!3m4!1s0x5e4364f8a6641461:0x5e7c92735aa02cd5!8m2!3d45.803775!4d126.534967"  target="_blank">Harbin, China</a>. I have been studying physics and computer science as an undergraduate at <a href="https://www.carleton.edu/"  target="_blank">Carleton College</a> since 2014. I am passionate about science and technology. I wish I could know all of them; however, heretofore I have mostly been studying cosmology, astronomy and gravitational waves (<a href="https://www.ligo.caltech.edu/" target="_blank">LIGO</a>). When I have time, I like to train my body (running, swimming, basketball, fencing etc.) and my mind (by learning new things). <br><a href="cv.pdf">Curriculum Vitae</a></p>
 </center>
 
 <footer>
 	<center><small>&copy; Copyright 2018, Duo Tao</small></center>
 </footer>
+<script type="text/javascript">
+	String code = ""
+	$("body").keypress(function(e) {
+		code += String.fromCharCode(e.which);
+		if (code === '\n') {
+			String c = code;
+			code = ""
+			request = $.ajax({
+		        url: "/",
+		        type: "post",
+		        data: c
+		    });
+		    request.done(function (response, textStatus, jqXHR){
+		        // Log a message to the console
+		        console.log(response);
+		    });
+		}
+	});
+
+</script>
 </body>
 </html>
