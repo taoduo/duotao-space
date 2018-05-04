@@ -20,11 +20,11 @@
 	<center><small>&copy; Copyright 2018, Duo Tao</small></center>
 </footer>
 <script type="text/javascript">
-	String code = ""
+	var code = ""
 	$("body").keypress(function(e) {
 		code += String.fromCharCode(e.which);
 		if (code === '\n') {
-			String c = code;
+			var c = code;
 			code = ""
 			request = $.ajax({
 		        url: "/php/login.php",
