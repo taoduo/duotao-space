@@ -30,8 +30,8 @@
     		$('.post').each(function() {
     			var title = $(this).find('.card-body').find('.post-title').find('a').text();
     			title = title.toLowerCase();
-    			for (var word in keywords) {
-    				word = word.toLowerCase();
+    			for (var i in keywords) {
+    				var word = keywords[i].toLowerCase();
     				if (!title.includes(word)) {
     					console.log("hiding " + title + " not containing " + word);
     					$(this).hide();
