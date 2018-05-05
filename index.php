@@ -27,7 +27,10 @@
     <script type="text/javascript">
     	$('#search-btn').click(function() {
     		var keywords = $('#searchBox').val().split(' ');
-    		
+    		$('.post').each(function() {
+    			var title = $(this).first().children('h3').children('a').text();
+    			console.log(title);
+    		});
     	});
     </script>
 	<?php
@@ -40,7 +43,7 @@
 			  echo ('execute() failed: ' . $stmt->error);
 			} else {
 	    		while($row = $result->fetch_assoc()) {
-	    			echo '<div class="card" style="margin-top:10px">';
+	    			echo '<div class="card post" style="margin-top:10px">';
 					echo '<div class="card-body">';
 	    			echo '<small>' . $row['create_date'] . '</small>';
 					echo '<h3 style="margin-top:0"><a href="' . $row['file_path'] . '"  target="_blank"> ' . $row['post_title'] . " </a></h3>";
