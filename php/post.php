@@ -22,7 +22,7 @@ if($_SESSION['login'] == 1) {
 	    	$file_path = $target_file;
 	    	$title = $_POST['title'];
 	    	$create_date = date('Y-m-d');
-	    	$statement->execute();
+	    	$result = $statement->execute();
 	    	if ( false===$result ) {
 			  die('execute() failed: ' . $stmt->error);
 			}
