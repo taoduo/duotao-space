@@ -19,27 +19,32 @@
 	<div class="input-group">
         <input type="text" class="form-control" placeholder="Search" id="txtSearch"/>
         <div class="input-group-btn">
-          <button class="btn btn-primary" type="submit">
+          <button class="btn btn-primary" type="submit" id='search-btn'>
             Search
           </button>
         </div>
     </div>
+    <script type="text/javascript">
+    	$('#search-btn').click(function() {
+    		console.log('123');
+    	});
+    </script>
 	<?php
-	$mysqli = new mysqli("localhost", "duotaosp_WPU6Q", "Bonanza2018", "duotaosp_WPU6Q");
-	if ($conn->connect_error) {
-	    echo "Connection failed: " . $conn->connect_error;
-	} else {
-    	$result = $mysqli->query("select * from posts order by create_date desc;");
-    	if ( false===$result ) {
-		  echo ('execute() failed: ' . $stmt->error);
+		$mysqli = new mysqli("localhost", "duotaosp_WPU6Q", "Bonanza2018", "duotaosp_WPU6Q");
+		if ($conn->connect_error) {
+		    echo "Connection failed: " . $conn->connect_error;
 		} else {
-    		while($row = $result->fetch_assoc()) {
-    			echo '<small>' . $row['create_date'] . '</small>';
-				echo '<h1 style="margin-top:0"><a href="' . $row['file_path'] . '"> ' . $row['post_title'] . " </a></h1>";
-			}
-    	}
-	}
-?>
+	    	$result = $mysqli->query("select * from posts order by create_date desc;");
+	    	if ( false===$result ) {
+			  echo ('execute() failed: ' . $stmt->error);
+			} else {
+	    		while($row = $result->fetch_assoc()) {
+	    			echo '<small>' . $row['create_date'] . '</small>';
+					echo '<h1 style="margin-top:0"><a href="' . $row['file_path'] . '"> ' . $row['post_title'] . " </a></h1>";
+				}
+	    	}
+		}
+	?>
 </center>
 <footer>
 	<center><small>&copy; Copyright 2018, Duo Tao</small></center>
