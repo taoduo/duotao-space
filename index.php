@@ -22,12 +22,13 @@
           <button class="btn btn-primary" type="submit" id='search-btn'>
             Search
           </button>
-          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
-			  ?
-		  </button>
+          <a href="#" data-toggle="tooltip" title="A result shows only if its title contains ALL the keywords you enter.">?</a>
         </div>
     </div>
     <script type="text/javascript">
+    	$(document).ready(function(){
+		    $('[data-toggle="tooltip"]').tooltip();   
+		});
     	$('#search-btn').click(function() {
     		var keywords = $('#searchBox').val().trim().split(' ');
     		$('.post').each(function() {
