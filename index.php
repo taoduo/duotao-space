@@ -43,7 +43,7 @@
 	    			echo '<div class="card" style="margin-top:10px">';
 					echo '<div class="card-body">';
 	    			echo '<small>' . $row['create_date'] . '</small>';
-					echo '<h1 style="margin-top:0"><a href="' . $row['file_path'] . '"  target="_blank"> ' . $row['post_title'] . " </a></h1>";
+					echo '<h2 style="margin-top:0"><a href="' . $row['file_path'] . '"  target="_blank"> ' . $row['post_title'] . " </a></h2>";
 					echo '</div>';
 					echo '</div>';
 				}
