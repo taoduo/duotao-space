@@ -11,7 +11,7 @@
 <body class="container">
 <center>
 	<img height="125" width="125" alt="Duo Tao Profile" src="profile.jpg"/>
-	<i>What we do for ourselves dies with us. What we do for others and the world remains and is immortal. (Albert Pike)</i>
+	<p><i>What we do for ourselves dies with us. What we do for others and the world remains and is immortal. (Albert Pike)</i></p>
 	<h1><a data-toggle="collapse" data-target="#collapseExample">Duo Tao</a></h1>
 	<div class="collapse" id="collapseExample">
 	  <div class="card card-body">
