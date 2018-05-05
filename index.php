@@ -33,6 +33,7 @@
     			for (var word in keywords) {
     				word = word.toLowerCase();
     				if (!title.includes(word)) {
+    					console.log("hiding " + title + " not containing " + word);
     					$(this).hide();
     					break;
     				}
