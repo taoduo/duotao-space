@@ -20,10 +20,10 @@
         <input type="text" class="form-control" placeholder="Search" id="txtSearch"/>
         <div class="input-group-btn">
           <button class="btn btn-primary" type="submit">
-            <span class="glyphicon glyphicon-search"></span>
+            Search
           </button>
         </div>
-      </div>
+    </div>
 	<?php
 	$mysqli = new mysqli("localhost", "duotaosp_WPU6Q", "Bonanza2018", "duotaosp_WPU6Q");
 	if ($conn->connect_error) {
