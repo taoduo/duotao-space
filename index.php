@@ -28,7 +28,7 @@
     	$('#search-btn').click(function() {
     		var keywords = $('#searchBox').val().split(' ');
     		$('.post').each(function() {
-    			var title = $(this).find('.title-text').val();
+    			var title = $(this).find('.card-body').find('post-title').find('a').text();
     			console.log(title);
     		});
     	});
@@ -46,7 +46,7 @@
 	    			echo '<div class="card post" style="margin-top:10px">';
 					echo '<div class="card-body">';
 	    			echo '<small>' . $row['create_date'] . '</small>';
-					echo '<h3 style="margin-top:0" class="post-title"><a href="' . $row['file_path'] . '"  target="_blank" class="title-text"> ' . $row['post_title'] . " </a></h3>";
+					echo '<h3 style="margin-top:0" class="post-title"><a href="' . $row['file_path'] . '"  target="_blank"> ' . $row['post_title'] . " </a></h3>";
 					echo '</div>';
 					echo '</div>';
 				}
