@@ -11,7 +11,7 @@ if($_SESSION['login'] == 1) {
     		http_response_code(500);
 		    echo "Connection failed: " . $conn->connect_error;
 		} else {
-	    	$statement = $mysqli->prepare("insert into posts (file_path, post_title, create_date) values (?,?,?)");
+	    	$statement = $mysqli->prepare("insert into posts (file_path, post_title, create_date) values (?,?,?);");
 	    	$statement->bind_param($file_path, $title, $create_date);
 	    	$file_path = $target_file;
 	    	$title = $_POST['title'];
