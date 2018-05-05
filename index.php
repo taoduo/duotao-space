@@ -26,7 +26,7 @@
 		} else {
     		while($row = $result->fetch_assoc()) {
     			echo '<small>' . $row['create_date'] . '</small>';
-				echo '<h1 style="margin-top:0"><a href="' . $row['file_path'] . "'> " . $row['post_title'] . " </a></h1>";
+				echo '<h1 style="margin-top:0"><a href="' . $row['file_path'] . '"> ' . $row['post_title'] . " </a></h1>";
 			}
     	}
 	}
