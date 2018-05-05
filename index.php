@@ -27,7 +27,7 @@
     <script type="text/javascript">
     	$('#search-btn').click(function() {
     		var keywords = $('#searchBox').val().split(' ');
-    		console.log(keywords);
+    		
     	});
     </script>
 	<?php
@@ -40,8 +40,12 @@
 			  echo ('execute() failed: ' . $stmt->error);
 			} else {
 	    		while($row = $result->fetch_assoc()) {
+	    			echo '<div class="card">';
+					echo '<div class="card-body">';
 	    			echo '<small>' . $row['create_date'] . '</small>';
 					echo '<h1 style="margin-top:0"><a href="' . $row['file_path'] . '"> ' . $row['post_title'] . " </a></h1>";
+					echo '</div>';
+					echo '</div>';
 				}
 	    	}
 		}
