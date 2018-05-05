@@ -30,6 +30,7 @@
     		$('.post').each(function() {
     			var title = $(this).find('.card-body').find('.post-title').find('a').text();
     			title = title.toLowerCase();
+    			$(this).show();
     			for (var i in keywords) {
     				var word = keywords[i].toLowerCase();
     				if (!title.includes(word)) {
