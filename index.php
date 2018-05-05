@@ -26,7 +26,7 @@
     </div>
     <script type="text/javascript">
     	$('#search-btn').click(function() {
-    		var keywords = $('#searchBox').val();
+    		var keywords = $('#searchBox').val().split(' ');
     		console.log(keywords);
     	});
     </script>
