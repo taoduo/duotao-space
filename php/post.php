@@ -15,7 +15,7 @@ if($_SESSION['login'] == 1) {
 	    	if ( false===$statement ) {
 			  die ('prepare() failed: ' . $mysqli->error);
 			}
-	    	$result = $statement->bind_param($file_path, $title, $create_date);
+	    	$result = $statement->bind_param('sss', $file_path, $title, $create_date);
 	    	if ( false===$result ) {
 			  die('bind_param() failed');
 			}
@@ -24,7 +24,7 @@ if($_SESSION['login'] == 1) {
 	    	$create_date = date('Y-m-d');
 	    	$statement->execute();
 	    	if ( false===$result ) {
-			  die('execute() failed: '.$stmt->error);
+			  die('execute() failed: ' . $stmt->error);
 			}
 	    	http_response_code(200);
 	    	echo "Success";
