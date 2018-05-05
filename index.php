@@ -112,7 +112,7 @@
 		        },
 		        error: function(msg) {
 		       		$("#myModal").modal('hide');
-		       		console(msg);
+		       		console.log(msg);
 		        }    
 		    });
 		});
