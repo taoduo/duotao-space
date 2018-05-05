@@ -28,7 +28,7 @@
     	$('#search-btn').click(function() {
     		var keywords = $('#searchBox').val().split(' ');
     		$('.post').each(function() {
-    			var title = $(this).children('.card-body')[0].children('.post-title')[0].val();
+    			var title = $(this).children('.card-body').children('.post-title').val();
     			console.log(title);
     		});
     	});
