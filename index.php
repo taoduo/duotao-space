@@ -22,6 +22,9 @@
           <button class="btn btn-primary" type="submit" id='search-btn'>
             Search
           </button>
+          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+			  ?
+		  </button>
         </div>
     </div>
     <script type="text/javascript">
@@ -34,7 +37,6 @@
     			for (var i in keywords) {
     				var word = keywords[i].toLowerCase();
     				if (!title.includes(word)) {
-    					console.log("hiding " + title + " not containing " + word);
     					$(this).hide();
     					break;
     				}
