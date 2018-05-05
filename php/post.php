@@ -12,11 +12,20 @@ if($_SESSION['login'] == 1) {
 		    echo "Connection failed: " . $conn->connect_error;
 		} else {
 	    	$statement = $mysqli->prepare("insert into posts (file_path, post_title, create_date) values (?,?,?);");
-	    	$statement->bind_param($file_path, $title, $create_date);
+	    	if ( false===$statement ) {
+			  die ('prepare() failed: ' . $mysqli->error);
+			}
+	    	$result = $statement->bind_param($file_path, $title, $create_date);
+	    	if ( false===$result ) {
+			  die('bind_param() failed');
+			}
 	    	$file_path = $target_file;
 	    	$title = $_POST['title'];
 	    	$create_date = date('Y-m-d');
-	    	$statement->execute();	    	
+	    	$statement->execute();
+	    	if ( false===$result ) {
+			  die('execute() failed: '.$stmt->error);
+			}
 	    	http_response_code(200);
 	    	echo "Success";
     	}
