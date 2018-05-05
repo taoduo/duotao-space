@@ -26,7 +26,7 @@
     </div>
     <script type="text/javascript">
     	$('#search-btn').click(function() {
-    		var keywords = $('#searchBox').val().trim().split(' ');
+    		var keywords = $('#searchBox').val().trim().split('[\\s-]');
     		$('.post').each(function() {
     			var title = $(this).find('.card-body').find('.post-title').find('a').text();
     			title = title.toLowerCase();
