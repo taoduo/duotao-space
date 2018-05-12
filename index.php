@@ -63,7 +63,7 @@
 					echo '<div class="card-body">';
 	    			echo '<small>' . $row['create_date'] . '</small>';
 					echo '<h3 style="margin-top:0" class="post-title"><a href="' . $row['file_path'] . '"  target="_blank"> ' . $row['post_title'] . " </a></h3>";
-					echo '<p>' + $row['content_abstrac'] + '</p>';
+					echo '<p>' . $row['content_abstract'] . '</p>';
 					echo '</div>';
 					echo '</div>';
 				}
