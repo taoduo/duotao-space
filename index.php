@@ -8,6 +8,9 @@
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="description" content="My name is Duo Tao. This is my website. ">
+  	<meta name="keywords" content="Duo,Tao,Carleton College,blog,physics,computer science">
+  	<meta name="author" content="Duo Tao">
 </head>
 <body class="container">
 <center>
@@ -60,6 +63,7 @@
 					echo '<div class="card-body">';
 	    			echo '<small>' . $row['create_date'] . '</small>';
 					echo '<h3 style="margin-top:0" class="post-title"><a href="' . $row['file_path'] . '"  target="_blank"> ' . $row['post_title'] . " </a></h3>";
+					echo '<p>' + $row['content_abstract'] + '</p>';
 					echo '</div>';
 					echo '</div>';
 				}
