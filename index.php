@@ -88,7 +88,11 @@
 		        <div class="form-group">
 			      <label for="title">Title</label>
 			      <input class="form-control" id="title" name='title' placeholder="Enter title">
-			    </div>	    
+			    </div>
+			    <div class="form-group">
+					<label for="abstract">Abstract</label>
+					<textarea class="form-control" rows="5" name='Abstract'></textarea>
+				</div>
 			    <div class="form-group">
 				    <label for="file">File</label>
 				    <input type="file" class="form-control-file" id="file" name='file' accept=".pdf">
