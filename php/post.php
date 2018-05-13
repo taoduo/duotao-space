@@ -9,6 +9,8 @@ $target_file = $target_dir . $filename;
 if($_SESSION['login'] == 1) {
 	if (file_exists($target_file)) {
 		http_response_code(400);
+		$content_abstract = $_POST['abstract'];
+		echo $content_abstract;
 		echo "File exists. Rename your pdf.";
 	} else {
 		$moved = move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
