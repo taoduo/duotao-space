@@ -19,7 +19,7 @@ if($_SESSION['login'] == 1) {
 		    	if ( false===$statement ) {
 				  die ('prepare() failed: ' . $mysqli->error);
 				}
-		    	$result = $statement->bind_param('sss', $file_path, $title, $create_date， $content_abstract);
+		    	$result = $statement->bind_param('ssss', $file_path, $title, $create_date，$content_abstract);
 		    	if ( false===$result ) {
 				  die('bind_param() failed');
 				}
