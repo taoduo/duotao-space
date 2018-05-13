@@ -91,7 +91,7 @@
 			    </div>
 			    <div class="form-group">
 					<label for="abstract">Abstract</label>
-					<textarea class="form-control" rows="5" name='Abstract'></textarea>
+					<textarea class="form-control" rows="5" id='abstract' name='abstract'></textarea>
 				</div>
 			    <div class="form-group">
 				    <label for="file">File</label>
