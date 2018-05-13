@@ -1,4 +1,7 @@
 <?php
+  ini_set('display_errors', 1);
+?>
+<?php
 session_start();
 $target_dir = "../posts/";
 $filename = basename($_FILES["file"]["name"]);
