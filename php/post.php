@@ -18,18 +18,18 @@ if($_SESSION['login'] == 1) {
 	    		http_response_code(500);
 			    echo "Connection failed: " . $conn->connect_error;
 			} else {
-		    	$statement = $mysqli->prepare("insert into posts (file_path, post_title, create_date, content_abstract) values (?,?,?,?);");
+		    	$statement = $mysqli->prepare("insert into posts (file_path, post_title, create_date) values (?,?,?);");
 		    	if ( false===$statement ) {
 				  die ('prepare() failed: ' . $mysqli->error);
 				}
-		    	$result = $statement->bind_param('ssss', $file_path, $title, $create_date，$content_abstract);
+		    	$result = $statement->bind_param('sss', $file_path, $title, $create_date);
 		    	if ( false===$result ) {
 				  die('bind_param() failed');
 				}
 		    	$file_path = $target_file;
 		    	$title = $_POST['title'];
 		    	$create_date = date('Y-m-d');
-		    	$content_abstract = $_POST['abstract'];
+		    	# $content_abstract = $_POST['abstract'];
 		    	$result = $statement->execute();
 		    	if ( false===$result ) {
 				  die('execute() failed: ' . $stmt->error);
