@@ -26,7 +26,7 @@ if($_SESSION['login'] == 1) {
 		    	$file_path = $target_file;
 		    	$title = $_POST['title'];
 		    	$create_date = date('Y-m-d');
-		    	$content_abstract = $_POST['content_abstract'];
+		    	$content_abstract = $_POST['abstract'];
 		    	$result = $statement->execute();
 		    	if ( false===$result ) {
 				  die('execute() failed: ' . $stmt->error);
