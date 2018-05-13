@@ -30,6 +30,7 @@ if($_SESSION['login'] == 1) {
 		    	$title = $_POST['title'];
 		    	$create_date = date('Y-m-d');
 		    	$content_abstract = $_POST['abstract'];
+		    	echo $content_abstract;
 		    	$result = $statement->execute();
 		    	if ( false===$result ) {
 				  die('execute() failed: ' . $stmt->error);
