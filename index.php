@@ -26,7 +26,7 @@
           <button class="btn btn-primary" type="submit" id='search-btn'>
             Search
           </button>
-          <a href="#" data-toggle="tooltip" title="A result shows only if its title contains ALL the keywords you enter.">?</a>
+          <a href="#" data-toggle="tooltip" title="A result shows only if its title or abstract contains ALL the keywords you enter.">?</a>
         </div>
     </div>
     <script type="text/javascript">
@@ -37,11 +37,13 @@
     		var keywords = $('#searchBox').val().trim().split(' ');
     		$('.post').each(function() {
     			var title = $(this).find('.card-body').find('.post-title').find('a').text();
+    			var abstract = $(this).find('.card-body').find('.post-abstract').text();
     			title = title.toLowerCase();
+    			abstract = abstract.toLowerCase();
     			$(this).show();
     			for (var i in keywords) {
     				var word = keywords[i].toLowerCase();
-    				if (!title.includes(word)) {
+    				if (!(title.includes(word) || abstract.includes(word))) {
     					$(this).hide();
     					break;
     				}
@@ -63,7 +65,7 @@
 					echo '<div class="card-body">';
 	    			echo '<small>' . $row['create_date'] . '</small>';
 					echo '<h3 style="margin-top:0" class="post-title"><a href="' . $row['file_path'] . '"  target="_blank"> ' . $row['post_title'] . " </a></h3>";
-					echo '<p>' . $row['content_abstract'] . '</p>';
+					echo '<p class="post-abstract">' . $row['content_abstract'] . '</p>';
 					echo '</div>';
 					echo '</div>';
 				}
