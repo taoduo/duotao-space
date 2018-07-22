@@ -16,11 +16,15 @@
 <center>
 	<img height="125" width="125" alt="Duo Tao Profile" src="profile.jpg"/>
 	<p style="margin-bottom: 0"><i>What we do for ourselves dies with us. What we do for others and the world remains and is immortal. (Albert Pike)</i></p>
-	<h1 style="margin-bottom: 0;">Duo Tao</h1><a data-toggle="collapse" href="#collapseExample">About me...</a>
+	<h1 style="margin-bottom: 0;">Duo Tao</h1>
+	<a data-toggle="collapse" href="#collapseExample">About me...</a>
 	<div class="collapse" id="collapseExample">
 	    <p> Born in <a href="https://www.google.com/maps/place/Harbin,+Heilongjiang,+China/@45.7568875,90.7926164,3z/data=!4m5!3m4!1s0x5e4364f8a6641461:0x5e7c92735aa02cd5!8m2!3d45.803775!4d126.534967"  target="_blank">Harbin, China</a>. I am a graduate student at California Institute of Technology, aka Caltech. I graduated from <a href="https://www.carleton.edu/"  target="_blank">Carleton College</a> in 2018, double majoring in physics and computer science. I am passionate about science and technology. I wish I could know all of them; however, heretofore I have mostly been studying cosmology, astronomy and gravitational waves (<a href="https://www.ligo.caltech.edu/" target="_blank">LIGO</a>). When I have time, I like to train my body (running, swimming, basketball, fencing etc.) and my mind (by learning new things). </p>
 	    <p>
 	    	 I have a long term plan of making learning science part of my life by making sure that there is some new science stored in my mind everyday. I want to keep the science part of my brain strong and fresh so that I can use it for creative work throughout my life.
+	    </p>
+	    <p>
+	    	 You can contact me via my gmail; my username is duo.tao.2017.
 	    </p>
 	</div>
 	<br>
