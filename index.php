@@ -26,9 +26,9 @@
 	<br>
 	<a data-toggle="collapse" href="#collapseExample1">About this website...</a>
 	<div class="collapse" id="collapseExample1">
-	    <p>This website is intended for both personal usage and sharing. The most important is personal use. When I learn something, writing it down helps me processing and recording the information.  Besides, this can give my readers some idea of my skills and knowledge, which I hope will be helpful for other learners like me. </p>
+	    <p>This website is intended for both personal usage and public sharing, the former being more important. When I learn something, writing it down helps me processing the information or referencing it in the future.  Besides, this can give my readers some idea of my skills and knowledge, which I hope will help other learners like me. </p>
 
-	    <p> However, it must be emphasized that <b>I share my study here, not my work or research. </b> In other words, all the information on this site summerizes what I learn from other publicly accessible sources, Internet, textbooks or published papers mostly, all cited along with my posts. All research-related content are not shared here. If you want to know about my research, please contact me directly. That said, it might be good to put my CV here, but I am currently updating my CV. I might consider sharing it here later. </p>
+	    <p> However, it must be emphasized that <b>I share my study here, not my work or research. </b> In other words, all the information on this site summerizes what I learn from other publicly accessible sources, Internet, textbooks or published papers mostly, cited along with my posts. All research-related content are not shared here. If you want to know about my research, please contact me directly. That said, it might be good to put my CV here, but I am currently rewriting my CV. I might consider sharing it here later. </p>
 	</div>
 	<div class="input-group">
         <input type="text" class="form-control" placeholder="Search" id="searchBox"/>
