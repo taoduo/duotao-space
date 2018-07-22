@@ -23,6 +23,7 @@
 	    	 I have a long term plan of making learning science part of my life. I keep learning everyday, making sure that I learn have some new science everyday. I want to keep the science part of my brain strong and fresh so that it can be used for creative work.
 	    </p>
 	</div>
+	<br>
 	<a data-toggle="collapse" href="#collapseExample1">About this website...</a>
 	<div class="collapse" id="collapseExample1">
 	    <p>This website is used for several purposes. The most important is personal use. Writing is a great way to learn. When I learn something, writing it down helps me processing the information. I also want to record the information for future reference. Besides, this can give my readers some idea of my skills and knowledge. However, it should be emphasized that <b>I share my study here, not my research. In other words, all the information on this site summerizes what I learn from somewhere else, Internet or textbooks mostly. All research related content are not shared here. </b> If you want to know my research, please contact me. </p>
