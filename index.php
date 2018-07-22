@@ -18,7 +18,14 @@
 	<p style="margin-bottom: 0"><i>What we do for ourselves dies with us. What we do for others and the world remains and is immortal. (Albert Pike)</i></p>
 	<h1 style="margin-bottom: 0;">Duo Tao</h1><a data-toggle="collapse" href="#collapseExample">About me...</a>
 	<div class="collapse" id="collapseExample">
-	    <p>I was born in <a href="https://www.google.com/maps/place/Harbin,+Heilongjiang,+China/@45.7568875,90.7926164,3z/data=!4m5!3m4!1s0x5e4364f8a6641461:0x5e7c92735aa02cd5!8m2!3d45.803775!4d126.534967"  target="_blank">Harbin, China</a>. I have been studying physics and computer science as an undergraduate at <a href="https://www.carleton.edu/"  target="_blank">Carleton College</a> since 2014. I am passionate about science and technology. I wish I could know all of them; however, heretofore I have mostly been studying cosmology, astronomy and gravitational waves (<a href="https://www.ligo.caltech.edu/" target="_blank">LIGO</a>). When I have time, I like to train my body (running, swimming, basketball, fencing etc.) and my mind (by learning new things). <br><a target="_blank" href="cv.pdf">Curriculum Vitae</a></p>
+	    <p>I was born in <a href="https://www.google.com/maps/place/Harbin,+Heilongjiang,+China/@45.7568875,90.7926164,3z/data=!4m5!3m4!1s0x5e4364f8a6641461:0x5e7c92735aa02cd5!8m2!3d45.803775!4d126.534967"  target="_blank">Harbin, China</a>. I am a graduate student at California Institute of Technology, aka Caltech. I graduated from Carleton College as a physics and computer science major at <a href="https://www.carleton.edu/"  target="_blank">Carleton College</a> in 2018. I am passionate about science and technology. I wish I could know all of them; however, heretofore I have mostly been studying cosmology, astronomy and gravitational waves (<a href="https://www.ligo.caltech.edu/" target="_blank">LIGO</a>). When I have time, I like to train my body (running, swimming, basketball, fencing etc.) and my mind (by learning new things). </p>
+	    <p>
+	    	 I have a long term plan of making learning science part of my life. I keep learning everyday, making sure that I learn have some new science everyday. I want to keep the science part of my brain strong and fresh so that it can be used for creative work.
+	    </p>
+	</div>
+	<a data-toggle="collapse" href="#collapseExample1">About this website...</a>
+	<div class="collapse" id="collapseExample1">
+	    <p>This website is used for several purposes. The most important is personal use. Writing is a great way to learn. When I learn something, writing it down helps me processing the information. I also want to record the information for future reference. Besides, this can give my readers some idea of my skills and knowledge. However, it should be emphasized that <b>I share my study here, not my research. In other words, all the information on this site summerizes what I learn from somewhere else, Internet or textbooks mostly. All research related content are not shared here. </b> If you want to know my research, please contact me. </p>
 	</div>
 	<div class="input-group">
         <input type="text" class="form-control" placeholder="Search" id="searchBox"/>
